@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "prepare": "husky",
     "deploy": "run-s build deploy:deploy-dist",
-    "deploy-dist": "gh-pages -d dist"
+    "deploy:deploy-dist": "gh-pages -d dist"
   },
   "dependencies": {
     "@solid-primitives/storage": "^3.5.0",
