@@ -7,7 +7,7 @@ export const TaskList = (props: {
   setTasks: SetStoreFunction<TaskData[]>;
 }) => {
   return (
-    <ul>
+    <ul class="mb-4">
       <For each={props.tasks}>
         {(task, i) => (
           <Task

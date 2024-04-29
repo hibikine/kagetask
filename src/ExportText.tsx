@@ -12,7 +12,7 @@ export const ExportText = (props: { tasks: TaskData[] }) => {
       .join('\n');
   };
   return (
-    <textarea readonly rows={6} cols={100}>
+    <textarea class="bg-slate-50 border" readonly rows={6} cols={111}>
       {taskValue()}
     </textarea>
   );

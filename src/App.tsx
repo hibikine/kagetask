@@ -17,15 +17,16 @@ function App() {
     ]),
     {
       storage: indexedDbStorage,
-    }
+    },
   );
   createEffect(() => {
     console.log('Tasks:', tasks);
   });
 
   return (
-    <>
+    <div class="p-2">
       <button
+        class="border px-2 bg-sky-600 text-white mb-4 mt-2"
         onClick={() => {
           setTasks((prev) => {
             const newTasks = [...prev];
@@ -40,7 +41,7 @@ function App() {
       </button>
       <TaskList tasks={tasks} setTasks={setTasks} />
       <ExportText tasks={tasks} />
-    </>
+    </div>
   );
 }
 
