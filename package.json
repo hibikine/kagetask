@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "run-s build deploy:deploy-dist",
+    "deploy-dist": "gh-pages -d dist"
   },
   "dependencies": {
     "@solid-primitives/storage": "^3.5.0",
@@ -18,10 +20,13 @@
   "devDependencies": {
     "@eslint/js": "^9.1.1",
     "autoprefixer": "^10.4.19",
+    "eslint": "^9.1.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-solid": "^0.14.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "micromatch": "^4.0.5",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",

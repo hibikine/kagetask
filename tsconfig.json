@@ -21,6 +21,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  "parserOptions": {
+    "project": true
+  },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
